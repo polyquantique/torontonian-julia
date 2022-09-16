@@ -1,7 +1,7 @@
 # torontonian-julia
 Julia implementation of the functions Torontonian and threshold detection probabilities (without displacement).
 
-There are two implementations for the computation of the Torontonian function: the first one uses directly the definition, the second one uses the recursive algorithm introduced in https://arxiv.org/pdf/2109.04528.pdf.
+There are two implementations for the computation of the Torontonian function: the first one uses directly the definition, the second one uses the recursive algorithm introduced in [arxiv:2109.04528](https://arxiv.org/abs/2109.04528).
 
 The recursive algorithm provides polynomial speedup of the computation (when the number of modes is increased), as demonstrated in the following pictures:
 
