@@ -5,7 +5,7 @@ using DoubleFloats
 using LinearAlgebra
 
 """
-    q_mat(cov, hbar=2)
+    q_mat(cov; hbar=2)
 
 Compute the Husimi covariance matrix of a Gussian state.
 
@@ -73,7 +73,7 @@ end
 
 Returns the recursive Torontonian sub-computation of a matrix.
 
-Algorithm from paper:
+Algorithm from:
 https://arxiv.org/pdf/2109.04528.pdf
 
 ### Input
@@ -113,6 +113,9 @@ end
 
 Returns the Torontonian of a matrix (using directly the definition).
 
+Definition from:
+https://arxiv.org/abs/1807.01639
+
 ### Input
 - `O` -- Array: a square, symmetric array of even dimensions.
 
@@ -138,7 +141,7 @@ end
 
 Returns the Torontonian of a matrix (using the recursive algorithm).
 
-Algorithm from paper:
+Algorithm from:
 https://arxiv.org/pdf/2109.04528.pdf
 
 ### Input
@@ -161,7 +164,7 @@ function rec_tor(A)
 end
 
 """
-    threshold_detection_prob(cov, det_pattern, hbar=2, recursive=true)
+    threshold_detection_prob(cov, det_pattern; hbar=2, recursive=true)
 
 Returns threshold detection probabilities for Gaussian states without displacement.
 
