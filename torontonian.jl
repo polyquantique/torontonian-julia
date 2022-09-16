@@ -33,7 +33,7 @@ end
 Returns the Cholesky factorization of a matrix using sub-matrix of prior
 Cholesky based on the new matrix and lower right quadrant.
 
-Algorithm from paper:
+Algorithm from:
 https://arxiv.org/pdf/2109.04528.pdf
 
 ### Input
