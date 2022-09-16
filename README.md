@@ -9,3 +9,5 @@ The recursive algorithm provides a polynomial speedup of the computation (when t
 
 ![time_comparison_2](https://user-images.githubusercontent.com/95931266/190509883-9369e83a-d358-466e-b2fd-59f99453ef69.png)
 
+To run the tests write `julia tor_tests.jl` on a terminal. 
+
