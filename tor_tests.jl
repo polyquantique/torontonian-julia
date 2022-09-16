@@ -12,7 +12,7 @@ include("./torontonian.jl")
 """
     random_covariance(N; hbar=2, pure=false)
 
-Generate random covariance matrix of a Gaussian state.
+Generate a random covariance matrix of a Gaussian state.
 
 ### Input
 - `N`  -- Int: Number of modes
