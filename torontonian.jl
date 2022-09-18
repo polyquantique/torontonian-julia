@@ -10,7 +10,7 @@ using LinearAlgebra
 Compute the Husimi covariance matrix of a Gussian state.
 
 ### Input
-- `cov`  -- Array: ``2N \\times 2N`` ``xp``-Wigner covariance matrix of the Gaussian state
+- `cov`  -- Array: ``2N \\times 2N`` ``xxpp``-Wigner covariance matrix of the Gaussian state
 - `hbar` -- Float: (optional, default: `hbar=2`) value of ``\\hbar`` in the commutation relation ``[x,p]=i\\hbar``
 
 ### Output
@@ -79,7 +79,7 @@ https://arxiv.org/pdf/2109.04528.pdf
 ### Input
 - `L`     -- Array: current Cholesky factorization
 - `modes` -- Array: optical modes
-- `A`     -- Array: a square, symmetric array of even dimensions
+- `A`     -- Array: a square, Hermitian array of even dimensions
 - `n`     -- Int: size of the original matrix 
 
 ### Output
@@ -117,7 +117,7 @@ Definition from:
 https://arxiv.org/abs/1807.01639
 
 ### Input
-- `O` -- Array: a square, symmetric array of even dimensions.
+- `O` -- Array: a square, Hermitian array of even dimensions.
 
 ### Output
 
@@ -145,7 +145,7 @@ Algorithm from:
 https://arxiv.org/pdf/2109.04528.pdf
 
 ### Input
-- `A` -- Array: a square, symmetric array of even dimensions.
+- `A` -- Array: a square, Hermitian array of even dimensions.
 
 ### Output
 
@@ -178,7 +178,7 @@ Returns threshold detection probabilities for Gaussian states without displaceme
 
 ### Output
 
-Float: probability of the detction pattern.
+Float: probability of the detection pattern.
 """
 function threshold_detection_prob(cov, det_pattern; hbar = 2, recursive = true)
     cov = Array{ComplexDF64}(cov)
