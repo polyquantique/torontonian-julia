@@ -1,3 +1,5 @@
+[![a](https://img.shields.io/static/v1?label=arXiv&message=2207.10058&color=active&style=flat-square)](https://arxiv.org/abs/2207.10058)
+
 # torontonian-julia
 Julia implementation of the functions Torontonian and threshold detection probabilities (without displacement).
 
@@ -13,7 +15,6 @@ To run the tests write `julia tor_tests.jl` on a terminal.
 
 If you find this work useful please cite the work in which it was implemented and tested
 
-[![a](https://img.shields.io/static/v1?label=arXiv&message=2207.10058&color=active&style=flat-square)](https://arxiv.org/abs/2207.10058)
 Javier Martínez-Cifuentes, K. M. Fonseca-Romero, Nicolás Quesada, "[Classical models are a better explanation of the Jiuzhang 1.0 Gaussian Boson Sampler than its targeted squeezed light model](https://arxiv.org/abs/2207.10058)."
 
 
